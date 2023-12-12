@@ -3,97 +3,130 @@
     <head>
         <meta charset="utf-8">
         <title>MORI, Yuka</title>
-	<link rel="canonical" href="https://www.mori.yuka.org/">
+        <link rel="canonical" href="https://www.mori.yuka.org/">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta property='og:type' content='article'/>
+        <meta property='og:type' content='article'/>
         <meta property='og:title' content='MORI, Yuka'/>
         <meta property='og:description' content='Personal Website of MORI, Yuka'/>
         <meta property='og:image' content='https://www.mori.yuka.org/icon.png'/>
         <style>
             :root {
-		background-color: #eeeeee;
-		min-inline-size: 100%;
-		min-block-size: 100%;
-		display: flex;
-		flex-direction: column;
-	    }
+                background-color: #eeeeee;
+                min-inline-size: 100%;
+                min-block-size: 100%;
+                display: flex;
+                flex-direction: column;
+            }
 
             :root, body {
                 font-family: system-ui, sans-serif;
             }
 
-	    body {
-		margin: 0;
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-	    }
+            body {
+                margin: 0;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
 
-	    #page-header {
+            #page-header {
                 background-color: #f2dede;
-	    }
+            }
 
-	    #page-header-inner {
-		margin-inline: auto;
-		max-inline-size: 40rem;
-		display: flex;
-		flex-direction: row;
-		block-size: 4rem;
-	    }
+            #page-header-inner {
+                margin-inline: auto;
+                max-inline-size: 40rem;
+                display: flex;
+                flex-direction: row;
+                block-size: 4rem;
+            }
 
-	    #logo {
+            #logo {
                 inline-size: 4rem;
-		background: url(/icon.png) center / cover;
-	    }
+                background: url(/icon.png) center / cover;
+            }
 
-	    #banner {
-		flex: 1;
-		min-inline-size: 0;
-		font-size: 150%;
-		align-self: center;
-		text-decoration: none;
-		color: #6f6f6f;
-		padding-inline-start: 1em;
-		padding-inline-end: 1em;
-		font-family: monospace;
-	    }
+            #banner {
+                flex: 1;
+                min-inline-size: 0;
+                font-size: 150%;
+                align-self: center;
+                text-decoration: none;
+                color: #6f6f6f;
+                padding-inline-start: 1em;
+                padding-inline-end: 1em;
+                font-family: monospace;
+            }
 
-	    #banner-surname {
-		font-weight: bold;
-		color: #d68080;
-	    }
+            #banner-surname {
+                font-weight: bold;
+                color: #d68080;
+            }
 
-	    #banner-tld {
-		color: #a6a6a6;
-	    }
+            #banner-tld {
+                color: #a6a6a6;
+            }
+
+            #websites {
+                margin-block: .5rem;
+                margin-inline: auto;
+                max-inline-size: 40rem;
+                padding: 1em;
+                box-sizing: border-box;
+            }
+
+            #websites ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                column-gap: 1em;
+            }
+
+            #websites ul > :not(:first-child) {
+                border-inline-start: solid 1px #cccccc;
+                padding-inline-start: 1em;
+            }
+
+            #websites ul a {
+                text-decoration: none;
+                color: #d68080;
+            }
+
+            #websites ul strong {
+                font-weight: bold;
+                color: #666666;
+            }
 
             #main {
-		margin-block: .5rem;
+                margin-block: .5rem;
                 margin-inline: auto;
                 padding: 1em;
-		inline-size: 100%;
+                inline-size: 100%;
                 max-inline-size: 40rem;
-		background-color: #ffffff;
-		border-radius: 1rem;
+                background-color: #ffffff;
+                border-radius: 1rem;
+                box-sizing: border-box;
             }
         </style>
     </head>
     <body>
-	<header id="page-header">
+        <header id="page-header">
             <div id="page-header-inner">
                 <a id="logo" href="/"></a>
-	        <a id="banner" href="/"><span id="banner-surname">MORI</span>.Yuka<span id="banner-tld">.org</span></a>
+                <a id="banner" href="/"><span id="banner-surname">MORI</span>.Yuka<span id="banner-tld">.org</span></a>
             </div>
-	</header>
-	<nav id="websites">
+        </header>
+        <nav id="websites">
             <ul>
                 <li><a href="https://xn--w1yo5e.org/">真空.org</a></li>
                 <li><strong>mori.yuka.org</strong></li>
             </ul>
         </nav>
-	<main id="main">
-	    <h1>MORI, Yuka</h1>
-	</main>
+        <main id="main">
+            <h1>MORI, Yuka</h1>
+        </main>
     </body>
 </html>
-
